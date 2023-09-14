@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="module" src="dist/app.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Grocery List</title>
+</head>
+
+<body>
+
+<div class="list-container">
+    <h1>Grocery List</h1>
+    <hr>
+    <ul class="item-list"></ul>
+</div>
+
+<div class="form-container">
+    <form class="new-item">
+        <div class="field">
+            <label for="store">Store:</label>
+            <input name="store" type="text" id="store">
+        </div>
+        <div class="field">
+            <label for="item">Item:</label>
+            <input name="item" type="text" id="item">
+        </div>
+        <div class="field">
+            <label>Quantity:</label>
+            <input min="1" type="number" id="quantity">
+        </div>
+        <div class="field">
+            <button>Add Item</button>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
