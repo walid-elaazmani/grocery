@@ -34,7 +34,7 @@ export class Template {
                 if (updatedItem && updatedQuantity && updatedStore) {
                     const groceryItem = item;
                     groceryItem.item = updatedItem;
-                    groceryItem.quantity = parseInt(updatedQuantity, 10);
+                    groceryItem.quantity = parseInt(updatedQuantity);
                     groceryItem.store = updatedStore;
                     h4.innerText = heading;
                     p.innerText = groceryItem.format();

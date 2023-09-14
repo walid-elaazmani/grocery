@@ -48,10 +48,11 @@ export class Template {
               if (updatedItem && updatedQuantity && updatedStore) {
                 // Cast 'item' to 'GroceryList'
                 const groceryItem = item as GroceryList;
+
                 groceryItem.item = updatedItem;
-                groceryItem.quantity = parseInt(updatedQuantity, 10);
+                groceryItem.quantity = parseInt(updatedQuantity);
                 groceryItem.store = updatedStore;
-      
+
                 // Update the displayed information in the list item
                 h4.innerText = heading;
                 p.innerText = groceryItem.format();
